@@ -7,6 +7,7 @@ import time
 
 # Brute Force Approach
 # Time Complexity: O(N * K)
+# Space Complexity: O(K)
 def find_avg_subarray_bf(arr: list, k: int) -> list:
     result = []
     for i in range(len(arr) - k + 1):
@@ -18,6 +19,7 @@ def find_avg_subarray_bf(arr: list, k: int) -> list:
 
 # Sliding Window Approach
 # Time Complexity: O(N)
+# Space Complexity: O(K)
 def find_avg_subarray_sw(arr: list, k: int) -> list:
     result = []
     _sum = 0
