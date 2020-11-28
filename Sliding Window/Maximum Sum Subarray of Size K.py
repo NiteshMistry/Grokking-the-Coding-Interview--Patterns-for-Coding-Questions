@@ -7,6 +7,7 @@ import time
 
 # Brute Force Approach
 # Time Complexity: O(N * K)
+# Space Complexity: O(1)
 def find_max_sum_subarray_bf(arr: list, k: int) -> list:
     _max_sum = 0
     for i in range(len(arr) - k + 1):
@@ -19,6 +20,7 @@ def find_max_sum_subarray_bf(arr: list, k: int) -> list:
 
 # Sliding Window Approach
 # Time Complexity: O(N)
+# Space Complexity: O(1)
 def find_max_sum_subarray_sw(arr: list, k: int) -> list:
     _max_sum = 0
     _sum = 0
